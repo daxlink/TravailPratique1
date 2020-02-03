@@ -17,7 +17,7 @@ public class CV {
 		
 		CV tabEmploye[] = {AlexisA, SamiV};
 		
-		System.out.println("Bienvenue chez Barette!");
+		System.out.println("Bienvenue chez Barette!\n");
 		
 		for (int i = 0; i < tabEmploye.length; i++) {
 			affiche(tabEmploye[i]);
@@ -35,6 +35,19 @@ public class CV {
 	}
 	
 	public static void affiche(CV personneCV) {
+		System.out.print("Nom :\t\t\t\t\t" + personneCV.nomCV + "\nPr\u00E9nom :\t\t\t\t" + personneCV.prenomCV +
+				"\nFormation :\t\t\t\t" + personneCV.formationCV + "\nExp\u00E9rience :\t\t\t\t" + personneCV.experienceCV +
+				"\nComp\u00E9tences :");
+		
+		for (int i = 0; i < personneCV.competencesCV.length; i++) {
+			if(i == 0) {
+				System.out.println("\t\t\t\t"  + personneCV.competencesCV[i]);
+			}else {
+				System.out.println("\t\t\t\t\t"  + personneCV.competencesCV[i]);
+			}
+		}
+		System.out.println("Attentes vis à vis le cours 4B4 :\t" + personneCV.attenteCV + "\n");
+		
 		
 	}
 
