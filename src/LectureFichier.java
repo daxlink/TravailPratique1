@@ -1,15 +1,14 @@
 import java.io.*;
-
-import jdk.nashorn.internal.runtime.regexp.joni.Regex;
 import outilsjava.*;
 
 public class LectureFichier {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		boolean peutContinuer = true;
 
 		String nomFicTest;
-		String texteFic = null;
+		String texteFic = "";
+		String line;
 		
 		BufferedReader fic = new BufferedReader( new InputStreamReader( System.in ) );
 		
@@ -19,11 +18,15 @@ public class LectureFichier {
 		
 		if ( fic == null ) {
 			peutContinuer = false;
+			
 		} else {
-			texteFic = fic.toString();
+			while ((line = fic.readLine()) != null) {
+				texteFic += line;
+			}
 			
 			if (!bonFormat(texteFic)) {
 				peutContinuer = false;
+				System.out.println("\nLe fichier n'est pas de bon format.");
 			}
 		}
 		
@@ -31,7 +34,7 @@ public class LectureFichier {
 
 			OutilsLecture.fic = fic;
 
-			System.out.print(texteFic);
+			//TODO ajouter la suite
 
 		} else {
 			System.out.println( "\nImpossible de tester le programme." );
@@ -41,13 +44,7 @@ public class LectureFichier {
 	
 	public static boolean bonFormat( String texteFic ) {
 		
-		Regex format = new Regex("Clients ?: ?[a-zA-ZÀ-ÿ]* ?Plats ?: ?([a-zA-ZÀ-ÿ]*[0-9. _]*)*Commandes ? : ?([a-zA-ZÀ-ÿ]*[0-9. _]*)*Fin");
-		
-		if (texteFic.matches(format.toString())) {
-			System.out.println("REUSSI");
-		}
-		
-		return true;
+		return texteFic.matches("Clints\\ ?:\\ ?[a-zA-ZÀ-ÿ]*\\ ?Plats\\ ?:\\ ?([a-zA-ZÀ-ÿ]*[0-9\\.\\ \\_]*)*Commandes\\ ? :\\ ?([a-zA-ZÀ-ÿ]*[0-9\\.\\ \\_]*)*Fin");
 	}
 	
 }
