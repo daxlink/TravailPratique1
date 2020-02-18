@@ -33,6 +33,8 @@ public class LectureFichier {
 		if ( peutContinuer ) {
 
 			OutilsLecture.fic = fic;
+			
+			System.out.println( "\nyep" );
 
 			//TODO ajouter la suite
 
@@ -44,7 +46,7 @@ public class LectureFichier {
 	
 	public static boolean bonFormat( String texteFic ) {
 		
-		return texteFic.matches("Clints\\ ?:\\ ?[a-zA-ZÀ-ÿ]*\\ ?Plats\\ ?:\\ ?([a-zA-ZÀ-ÿ]*[0-9\\.\\ \\_]*)*Commandes\\ ? :\\ ?([a-zA-ZÀ-ÿ]*[0-9\\.\\ \\_]*)*Fin");
+		return texteFic.matches("Clients\\ ?:\\ ?[a-zA-ZÀ-ÿ\\ ]*\\ ?Plats\\ ?:\\ ?([a-zA-ZÀ-ÿ]*[0-9\\.\\ \\_]*)*Commandes\\ ? :\\ ?([a-zA-ZÀ-ÿ]*[0-9\\.\\ \\_]*)*Fin");
 	}
 	
 }
