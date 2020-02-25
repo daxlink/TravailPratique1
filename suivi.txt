@@ -1,0 +1,11 @@
+Alexis Archambault
+
+Vérifier les commandes inccorects
+Afficher la facture et éditée dans un fichier
+Afficher les commandes incorrects dans la facture et le fichier
+
+Sami Vaugeois
+
+Ne pas afficher le client si sa facture est de 0$
+Appliquer les taxes
+Faire le calcul de la facture par client
