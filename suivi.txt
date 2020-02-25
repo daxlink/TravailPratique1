@@ -1,6 +1,6 @@
 Alexis Archambault
 
-Vérifier les commandes incorrects
+Vérifier les commandes inccorects
 Afficher la facture et éditée dans un fichier
 Afficher les commandes incorrects dans la facture et le fichier
 
