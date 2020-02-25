@@ -1,0 +1,14 @@
+1.Vérifier les commandes incorrects
+	si le client n'existe pas
+	si le plat n'existe pas
+	nombre de plat négatif ou trop élevé
+
+2.Afficher la facture et éditée dans un fichier
+	afficher la facture sur le terminal
+	édité un fichier avec la date et l'heure qui comporte la même sortit que le terminal
+
+3.Afficher les commandes incorrects dans la facture et le fichier
+	afficher les détails des commandes incorrect dans le terminal avant la facture
+	afficher la raison de l'erreur dans le terminal avant la facture
+	afficher les détails des commandes incorrect dans le fichier avant la facture
+	afficher la raison de l'erreur dans le fichier avant la facture
