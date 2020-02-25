@@ -9,6 +9,7 @@ public class Plats {
 	public Plats(String nom, double prix) {
 		this.nom = nom;
 		this.prix = prix;
+		
 	}
 
 	public String getNom() {

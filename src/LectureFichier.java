@@ -52,7 +52,9 @@ public class LectureFichier {
 	public static boolean bonFormat(String texteFic) {
 
 		return texteFic.matches(
-				"Clients\\ ?:\\ ?[a-zA-ZÀ-ÿ\\ ]*\\ ?Plats\\ ?:\\ ?([a-zA-ZÀ-ÿ]*[0-9\\.\\ \\_]*)*Commandes\\ ? :\\ ?([a-zA-ZÀ-ÿ]*[0-9\\.\\ \\_]*)*Fin");
+				"Clients\\ ?:\\ ?[a-zA-ZÀ-ÿ\\ ]*\\ ?"
+				+ "Plats\\ ?:\\ ?([a-zA-ZÀ-ÿ]*[0-9\\.\\ \\_]*)*"
+				+ "Commandes\\ ? :\\ ?([a-zA-ZÀ-ÿ]*[0-9\\.\\ \\_]*)*Fin");
 	}
 
 }

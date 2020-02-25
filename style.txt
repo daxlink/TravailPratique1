@@ -1,0 +1,10 @@
+Norme de programmation
+
+Espace inséré avant et après les opérateur
+Aérer le code avec des ligne blanche
+Accolades allignées verticalement
+Retrait à la ligne avec les bloc d'instruction
+variable en minuscule sauf les lettres des mots, excepter le premier mot
+constante en majuscule
+le nom des méthodes doivent être en minuscule sauf les lettres des mots, excepter le premier mot
+déclarer les variable au début de la méthode

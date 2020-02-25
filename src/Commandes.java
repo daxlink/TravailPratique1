@@ -7,12 +7,14 @@ public class Commandes {
 
 	public Commandes(Client client) {
 		this.client = client;
+		
 	}
 
 	public Commandes(Client client, Plats plat, int nombresPlats) {
 		this.client = client;
 		this.tabPlat.add(plat);
 		this.tabQuantite.add(nombresPlats);
+		
 	}
 
 	public Client getClient() {
@@ -24,12 +26,16 @@ public class Commandes {
 
 		for (Plats plats : tabPlat) {
 			prixTotal += (plats.getPrix() * tabQuantite.get(tabPlat.indexOf(plats)));
+			
 		}
+		
 		return prixTotal;
 	}
 
 	public void ajouterPlats(Plats plat, int quantite) {
 		tabPlat.add(plat);
 		tabQuantite.add(quantite);
+		
 	}
+	
 }
