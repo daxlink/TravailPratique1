@@ -1,0 +1,22 @@
+1)Ne pas afficher le client si sa facture est de 0$
+
+-Ne pas l'afficher si le client n'achète rien
+
+
+
+2)Appliquer les taxes
+
+-TPS est de 5%
+-TVQ est de 9.98%
+-Les taxes s'appliquent sur le sous-total
+-On doit afficher le montant individuel de chaque taxes
+-On doit additionner les taxes pour former le montant total
+
+
+
+3)Faire le calcul de la facture par client
+
+-Chaque client doit avoir une facture, sauf si il n'a rien commandé
+-Une facture doit afficher tous les plats commandés
+-On doit afficher le prix de chaque plats commandés
+-On doit afficher le sous-total, les taxes et le prix total
