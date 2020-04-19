@@ -23,7 +23,6 @@ public class CalculPrix {
 					Commandes commande = new Commandes(client);
 					
 					tabCommande.add(commande);
-					
 				}
 				
 			}
