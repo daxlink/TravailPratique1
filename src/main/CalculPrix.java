@@ -2,7 +2,6 @@ package main;
 
 import java.io.BufferedReader;
 import java.util.ArrayList;
-
 import outilsjava.OutilsAffichage;
 
 public class CalculPrix {

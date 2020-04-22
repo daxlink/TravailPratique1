@@ -28,7 +28,7 @@ public class Commandes {
 		int nbrePlats;
 		for (Plats plats : tabPlat) {
 			nbrePlats = tabQuantite.get(tabPlat.indexOf(plats));
-			
+
 			System.out.println(nbrePlats + " " + plats.getNom() + " "
 					+ (plats.getPrix() * tabQuantite.get(tabPlat.indexOf(plats))));
 
